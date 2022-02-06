@@ -1,0 +1,55 @@
+{
+  "name": "civmap",
+  "version": "3.0.0-beta3",
+  "description": "Generic web map for Civ-style Minecraft servers",
+  "author": "Gjum",
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/Gjum/CivMap#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gjum/CivMap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Gjum/CivMap/issues"
+  },
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --hot --inline --progress --colors",
+    "test": "jest",
+    "build": "webpack --config webpack-production.config.js --progress --colors"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^24.5.0",
+    "babel-loader": "^8.0.5",
+    "jest": "^24.5.0",
+    "react-hot-loader": "^4.8.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.9.2",
+    "@material-ui/icons": "^3.0.2",
+    "leaflet": "^1.4.0",
+    "leaflet-editable": "^1.2.0",
+    "leaflet.pattern": "^0.1.0",
+    "lodash": "^4.17.11",
+    "react": "^16.3",
+    "react-dom": "^16.3",
+    "react-leaflet": "^2.2.1",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-logger": "^3.0.6",
+    "uuid": "^3.3.2"
+  }
+}
